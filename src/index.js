@@ -5,8 +5,6 @@ window.application = new Application({
   $canvas: document.getElementById("js-canvas"),
 });
 
-// document.body.appendChild(renderer.domElement);
-
 // const pointLight = new THREE.PointLight(0xffffff);
 // pointLight.position.set(20, 20, 20);
 // scene.add(pointLight);
