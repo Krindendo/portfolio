@@ -1,0 +1,73 @@
+---
+import { siteConfig } from "@/site-config";
+import "../styles/global.css";
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const socialImageURL = new URL("/social-card.png", Astro.url).href;
+---
+
+<meta charset="utf-8" />
+<meta
+  content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+  name="viewport"
+/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<title>{siteConfig.title}</title>
+
+{/* Icons / Favicon */}
+<link href="/favicon.ico" rel="icon" sizes="any" />
+<link href="/icon.svg" rel="icon" type="image/svg+xml" />
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+<link href="/manifest.webmanifest" rel="manifest" />
+<link href={canonicalURL} rel="canonical" />
+
+{/* Primary Meta Tags */}
+<meta content={siteConfig.title} name="title" />
+<meta content={siteConfig.description} name="description" />
+<meta content={siteConfig.author} name="author" />
+
+{/* Theme Colour */}
+<meta content="" name="theme-color" />
+
+{/* Open Graph / Facebook */}
+<meta content="website" property="og:type" />
+<meta content={siteConfig.title} property="og:title" />
+<meta content={siteConfig.description} property="og:description" />
+<meta content={canonicalURL} property="og:url" />
+<meta content={siteConfig.title} property="og:site_name" />
+<meta content={siteConfig.ogLocale} property="og:locale" />
+<meta content={socialImageURL} property="og:image" />
+<meta content="1200" property="og:image:width" />
+<meta content="630" property="og:image:height" />
+
+{/* Twitter */}
+<meta content="summary_large_image" property="twitter:card" />
+<meta content={canonicalURL} property="twitter:url" />
+<meta content={siteConfig.title} property="twitter:title" />
+<meta content={siteConfig.description} property="twitter:description" />
+<meta content={socialImageURL} property="twitter:image" />
+
+{/* Sitemap */}
+<link href="/sitemap-index.xml" rel="sitemap" />
+
+{/* RSS auto-discovery */}
+<link
+  href="/rss.xml"
+  rel="alternate"
+  title={siteConfig.title}
+  type="application/rss+xml"
+/>
+
+{/* Webmentions */}
+{
+  siteConfig.webmentions && (
+    <>
+      <link href={siteConfig.webmentions.link} rel="webmention" />
+      {siteConfig.webmentions.pingback && (
+        <link href={siteConfig.webmentions.pingback} rel="pingback" />
+      )}
+    </>
+  )
+}
+
+<meta content={Astro.generator} name="generator" />
