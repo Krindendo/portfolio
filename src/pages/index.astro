@@ -4,16 +4,21 @@ import PageLayout from "@/layouts/Base.astro";
 
 <PageLayout>
   <section class="flex w-full gap-4 max-w-[640px] md:flex-row flex-col">
-    <div>
-      <p class="text-base shrink-0 md:text-right text-zinc-600">Summary</p>
+    <div class="shrink-0">
+      <p class="text-base md:text-right text-zinc-600" style="width:70px">
+        Summary
+      </p>
     </div>
-    <div class="leading-6 space-y-5">
+    <div class="grow-1 w-full leading-6 space-y-5">
       <p class="font-semibold">Hi, I'm Marko</p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-        architecto provident corporis nobis! Quae quos, autem, odit est
-        blanditiis deserunt numquam praesentium at laudantium quia quidem saepe
-        doloremque, aliquam et.
+        Front-end developer with over four years of experience creating
+        cutting-edge, responsive web solutions.
+      </p>
+      <p>
+        My biggest career accomplishment was getting approval to implement the
+        foundational architecture for an important web application, resulting in
+        a scalable and maintainable codebase.
       </p>
       <p>
         Looking to futher develop my experise in fullstack technologies and
@@ -23,30 +28,41 @@ import PageLayout from "@/layouts/Base.astro";
     </div>
   </section>
   <section class="flex w-full gap-4 max-w-[640px] md:flex-row flex-col">
-    <div>
-      <p class="text-base shrink-0 md:text-right text-zinc-600">Education</p>
+    <div class="shrink-0">
+      <p
+        class="text-base shrink-0 md:text-right text-zinc-600"
+        style="width:70px"
+      >
+        Education
+      </p>
     </div>
-    <div>
+    <div class="grow-1 w-full leading-6 space-y-5">
       <div class="flex flex-col">
-        <h3 class="text-lg font-bold text-blue-500">
-          Medior Front-End developer
+        <h3 class="text-lg font-bold text-blue-600">
+          Professional Bachelor's degree, Electrical engineering and computer
+          science
         </h3>
-        <p>Megatrend</p>
-        <p class="text-gray-400">2022-2023</p>
+        <p>Faculty of Technical Sciences Čačak</p>
+        <p class="text-gray-400">Completed in 2022</p>
       </div>
     </div>
   </section>
   <section class="flex w-full gap-4 max-w-[640px] md:flex-row flex-col">
-    <div>
-      <p class="text-base shrink-0 md:text-right text-zinc-600">Experience</p>
+    <div class="shrink-0">
+      <p
+        class="text-base shrink-0 md:text-right text-zinc-600"
+        style="width:70px"
+      >
+        Experience
+      </p>
     </div>
-    <div>
+    <div class="grow-1 w-full leading-6 space-y-5">
       <div class="flex flex-col">
-        <h3 class="text-lg font-bold text-blue-500">
-          Medior Front-End developer
+        <h3 class="text-lg font-bold text-blue-600">
+          Medior Front-end developer
         </h3>
-        <p class="text-gray-400">Megatrend</p>
-        <p class="text-gray-400">2022-2023</p>
+        <p class="text-gray-400">Megatrend a.d.</p>
+        <p class="text-gray-400">Sep 2020 - Present</p>
         <p class="mt-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, harum
           quo molestiae adipisci consequatur, iusto commodi quaerat, deleniti
@@ -57,32 +73,30 @@ import PageLayout from "@/layouts/Base.astro";
     </div>
   </section>
   <section class="flex w-full gap-4 max-w-[640px] md:flex-row flex-col">
-    <div>
-      <p class="text-base shrink-0 md:text-right text-zinc-600">Skills</p>
+    <div class="shrink-0">
+      <p
+        class="text-base shrink-0 md:text-right text-zinc-600"
+        style="width:70px"
+      >
+        Skills
+      </p>
     </div>
-    <div>
-      <div class="flex flex-col">
-        <h3 class="text-lg font-bold text-blue-500">
-          Medior Front-End developer
-        </h3>
-        <p class="text-gray-400">Megatrend</p>
-        <p class="text-gray-400">2022-2023</p>
-        <p class="mt-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, harum
-          quo molestiae adipisci consequatur, iusto commodi quaerat, deleniti
-          suscipit sint facere doloremque ipsam quae repudiandae voluptate
-          cupiditate. Eius, beatae impedit.
-        </p>
-      </div>
+    <div class="grow-1 w-full leading-6 space-y-5">
+      <ul class="flex flex-col flex-wrap">
+        <li><p>React</p></li>
+      </ul>
     </div>
   </section>
   <section class="flex w-full gap-4 max-w-[640px] md:flex-row flex-col">
-    <div>
-      <p class="text-base shrink-0 md:text-right text-zinc-600">
+    <div class="shrink-0">
+      <p
+        class="text-base shrink-0 md:text-right text-zinc-600"
+        style="width:70px"
+      >
         Prersonal Projects
       </p>
     </div>
-    <div class="space-y-5">
+    <div class="grow-1 w-full leading-6 space-y-5">
       <div class="flex flex-col">
         <div class="flex">
           <a
@@ -94,11 +108,9 @@ import PageLayout from "@/layouts/Base.astro";
           </a>
         </div>
 
-        <p class="mt-2 ml-0.5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, harum
-          quo molestiae adipisci consequatur, iusto commodi quaerat, deleniti
-          suscipit sint facere doloremque ipsam quae repudiandae voluptate
-          cupiditate. Eius, beatae impedit.
+        <p class="mt-2 ml-0.5 leading-5">
+          Developed a Chrome extension to block specific websites or URLs,
+          allowing users to set their own blocking rules.
         </p>
 
         <p class="mt-2 ml-0.5 text-gray-400">
@@ -111,13 +123,13 @@ import PageLayout from "@/layouts/Base.astro";
           <a
             class="text-lg font-semibold text-blue-500 hover:bg-blue-600 hover:text-white hover:rounded px-0.5"
             target="_blank"
-            href="https://chromewebstore.google.com/detail/website-blocker/dhlmgehhkhpniphhpjpelmjpheepabcm"
+            href="https://my-documentation-omega.vercel.app/"
           >
             My documentation
           </a>
         </div>
 
-        <p class="mt-2 ml-0.5">
+        <p class="mt-2 ml-0.5 leading-5">
           Developed a web application to display and share useful knowledge and
           insights. Pages are wroted in MDX files that are genereted in web
           pages.
