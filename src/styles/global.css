@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-	:root,
-	:root[data-theme="light"] {
-		color-scheme: light;
+  :root,
+  :root[data-theme="light"] {
+    color-scheme: light;
     --background: 0 0% 100%;
     --foreground: 240 5.88% 10%;
 
@@ -36,11 +36,11 @@
     --ring: 215 20.2% 65.1%;
 
     --radius: 0.5rem;
-	}
+  }
 
-	:root[data-theme="dark"] {
-		color-scheme: dark;
-    --background: 240 5.88% 10%;
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --background: 0 0% 0%;
     --foreground: 0 0% 100%;
 
     --muted: 223 47% 11%;
@@ -70,5 +70,20 @@
     --ring: 216 34% 17%;
 
     --radius: 0.5rem;
-	}
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  :root {
+    font-size: 17px;
+  }
+
+  body {
+    @apply bg-background text-foreground font-open-sans;
+    font-feature-settings: normal;
+  }
 }

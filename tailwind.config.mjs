@@ -75,8 +75,8 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        "open-sans": ["var(--font-sans)", ...fontFamily.sans],
-        heading: ["var(--font-heading)", ...fontFamily.sans],
+        "open-sans": ["Inter", ...fontFamily.sans],
+        heading: ["Inter", ...fontFamily.sans],
       },
       fontSize: {
         xs: ["0.75rem", "1rem"],
