@@ -1,5 +1,6 @@
 export interface SiteConfig {
   author: string;
+  url: string;
   date: {
     locale: string | string[] | undefined;
     options: Intl.DateTimeFormatOptions;
@@ -7,7 +8,6 @@ export interface SiteConfig {
   description: string;
   lang: string;
   ogLocale: string;
-  sortPostsByUpdatedDate: boolean;
   title: string;
   webmentions?: {
     link: string;

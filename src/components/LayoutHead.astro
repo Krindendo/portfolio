@@ -51,15 +51,15 @@ const socialImageURL = new URL("/social-card.png", Astro.url).href;
 <link href="/sitemap-index.xml" rel="sitemap" />
 
 {/* RSS auto-discovery */}
-<link
+<!-- <link
   href="/rss.xml"
   rel="alternate"
   title={siteConfig.title}
   type="application/rss+xml"
-/>
+/> -->
 
 {/* Webmentions */}
-{
+<!-- {
   siteConfig.webmentions && (
     <>
       <link href={siteConfig.webmentions.link} rel="webmention" />
@@ -68,6 +68,6 @@ const socialImageURL = new URL("/social-card.png", Astro.url).href;
       )}
     </>
   )
-}
+} -->
 
 <meta content={Astro.generator} name="generator" />

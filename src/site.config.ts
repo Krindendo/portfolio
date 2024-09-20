@@ -2,6 +2,7 @@ import type { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
   author: "Marko Samek",
+  url: "https://portfolio-krindendo.vercel.app/",
   date: {
     locale: "en-EN",
     options: {
@@ -13,6 +14,5 @@ export const siteConfig: SiteConfig = {
   description: "Portfolio of Marko Samek",
   lang: "en-EN",
   ogLocale: "en_EN",
-  sortPostsByUpdatedDate: false,
   title: "Marko Samek",
 };
